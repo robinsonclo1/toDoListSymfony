@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<h2 class="page-header">Latest To Dos</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>To Do</th>
+        <th>Due Date</th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+          <td>NAME</td>
+          <td>DUE DATE</td>
+          <td>
+            <a href="/todo/details/1" class="btn btn-success">View</a>
+          </td>
+          <td>
+            <a href="/todo/edit/1" class="btn btn-default">Edit</a>
+          </td>
+          <td>
+            <a href="/todo/delete/1" class="btn btn-danger">Delete</a>
+          </td>
+      </tr>
+    </tbody>
+  </table>
+{% endblock %}
